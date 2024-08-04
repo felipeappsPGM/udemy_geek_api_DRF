@@ -16,7 +16,7 @@ class AvaliacaoSerializer(serializers.ModelSerializer):
             'email',
             'comentario',
             'avaliacao',
-            'criacao',
+            'publicacao',
             'ativo'
         )
         
@@ -28,6 +28,6 @@ class CursoSerializer(serializers.ModelSerializer):
             'id',
             'titulo',
             'url',
-            'criacao',
+            'publicacao',
             'ativo'
         )

@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django_filters',
     'rest_framework',
     'cursos',
+    'escola'
     
 ]
 
@@ -142,10 +143,10 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 #DRF
 
 REST_FRAMEWORK = {
-    'DEFAULT_ATHENTICATION_CLASS': (
+    'DEFAULT_AUTHENTICATION_CLASSES': (
         'rest_framework.authentication.SessionAuthentication',
     ),
-    'DEFAULT_PERMISSIONS_CLASS': (
+    'DEFAULT_PERMISSION_CLASSES': (
         'rest_framework.permissions.IsAuthenticatedOrReadOnly',
     )
 }
